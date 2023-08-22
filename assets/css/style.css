@@ -1,0 +1,321 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgba(34, 32, 32, 0.655);
+    text-align: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 64px;
+}
+
+.navbar a:hover {
+    color: rgb(46, 146, 150);
+}
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/img/companyjpg.jpg");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(240, 248, 255, 0.378);
+}
+
+.aboutAs {
+    padding: 100px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aboutAs h1, .ourTeachers h1 {
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+}
+
+.aboutAs p {}
+
+.ourService, .allContact {
+    padding: 100px;
+    background-color: bisque;
+}
+
+.ourService1, .specializations1, .ourTeachers1, .headP, .countactUs1, .contactInfo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.countactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.all {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.A {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.A h3 {
+    padding-bottom: 20px;
+}
+
+.specializations {
+    padding: 100px;
+    background-color: aliceblue;
+}
+
+.ourTeachers {
+    background-color: bisque;
+    padding: 100px;
+}
+
+.allGroups, .allCard {
+    display: flex;
+    justify-content: space-around;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.imgName img {
+    padding-top: 20px;
+    width: 60px;
+}
+
+.imgName h3 {
+    padding: 10px 0px;
+}
+
+.plans {
+    padding: 100px;
+    background-color: aliceblue;
+}
+
+.headP {
+    display: flex;
+}
+
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.allCard {
+    justify-content: space-around;
+
+}
+
+
+.imgH img, .imgH h3 {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.list {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.list p {
+    white-space: nowrap;
+}
+
+.info {
+    width: 150px;
+    background-color: rgb(253, 239, 132);
+    border: 1px solid orange;
+}
+
+.countactUs {
+    text-align: center;
+    padding: 100px;
+}
+
+.name, .email, .Message {
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+}
+
+label {
+    display: flex;
+}
+
+button {
+    width: 200px;
+    padding: 1em;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.allInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countactUs {
+    background-color: bisque;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(34, 32, 32, 0.655);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.youtInfo {
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width:480px) {
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+
+    }
+
+    .nav-list .list-item {
+        display: block;
+        padding: 10px;
+        border-top: 1px solid white;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        text-align: center;
+        padding-top: 5px;
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("/assets/img/companyjpg.jpg");
+        background-position: bottom;
+        align-self: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .allGroups, .allCard {
+        flex-wrap: wrap;
+    }
+
+    .allCard {
+        justify-content: space-around;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .ourTeachers1 {
+        text-align: center;
+    }
+
+    .name, .email, .Message {
+        width: 80%;
+    }
+
+    .allcountactUs {
+        width: 60vh;
+    }
+
+    .group .paragraph, .A p {
+        white-space: nowrap;
+    }
+
+}
